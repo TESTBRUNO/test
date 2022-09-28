@@ -10,4 +10,4 @@ print(lst)
 
 i = 0
 
-фывфыв
+фывфывasdasd

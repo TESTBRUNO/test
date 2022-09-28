@@ -1,0 +1,29 @@
+.box {
+	margin: 100px;
+	padding: 150px;
+	height: 600px;
+	width: 600px;
+	margin-left: 1000px;
+
+}
+
+.distance {
+	margin: 10px;
+}
+
+.box-start {
+	margin: 280px;
+	padding: 0px;
+	margin-top: -650px;
+}
+
+.box-video {
+	margin: 50px;
+	padding: auto;
+	margin-top: -200px;
+}
+
+.box_auth {
+	margin-right: 250px;
+	max-width: 1000px;
+}

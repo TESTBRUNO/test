@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css">
+	<script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+	<link rel="stylesheet" href="{% static '/style.css' %}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+	<title>Registration</title>
+</head>
+<body>
+	<form action="" method="post">
+		{% csrf_token %}
+		<div class="box" align="center" style="line-height: 2.5;">
+			{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+			<img src="/static/logo.png" alt="jkgh" height="200" width="200">
+
+			<h1>Log in to your account</h1>
+			<div class="distance"><input class="input is-info" type="text" placeholder="Name" name="name"></div>
+			<div class="distance"><input class="input is-info" type="password" placeholder="Password" name="password"></div>
+			<div class="distance"><button class="
+	bbutton is-success" type="submit">Enter</button></div>
+			<a href="https://html5css.ru/edithtm/index.php">Forgot your password?</a>
+
+		</div>
+		<div style="margin: -618px; padding-right: 850px;"  align="center"><img src="static/start-pr.jpg" height="1700" width="890"></div>
+
+	</form>
+
+<style>
+	body{
+	background-image: 'static/myimg' | none | inherit;
+
+	}
+</style>
+
+
+</body>
+</html>

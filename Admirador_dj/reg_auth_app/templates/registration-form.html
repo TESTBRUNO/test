@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css">
+	<script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+	<link rel="stylesheet" href="{% static '/style.css' %}">
+	<title>Registration</title>
+</head>
+<body>
+	<form action="" method="post">
+		{% csrf_token %}
+		<div class="box" align="center">
+			<h1>Create your account</h1>
+			<div class="distance"><input class="input is-info" type="text" placeholder="Name" name="name"></div>
+			<div class="distance"><input class="input is-info" type="email" placeholder="Email" name="email"></div>
+			<div class="distance"><input class="input is-info" type="password" placeholder="Password" name="password"></div>
+			<div class="distance"><button class="button is-success" type="submit">Sign Up</button></div>
+			<a href="http://127.0.0.1:8000/auth">Already have an account?</a>
+		</div>
+		<div class="box-start">
+		<img src="/static/logo.png" alt="jkgh">
+		</div>
+	</form>
+	<div class="box-video">
+
+			<iframe width="900" height="500" src="https://www.youtube.com/embed/5weHputuO4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	</div>
+</body>
+</html>
